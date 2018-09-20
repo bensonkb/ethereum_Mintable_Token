@@ -47,25 +47,17 @@ We added a .env file!!! We need to add a .gitignore file now to avoid adding the
 Create a .gitignore file in the same directory as your .env. Now it should look like this:
 
 etherem_token_tutorial
-|___contracts
 
-| |_____Migrations.sol
-
+|___contracts 
+| |_____Migrations.sol 
 | |_____TestToken.sol
-
-|___migrations
-
-| |_____1_initial_migrations.js
-
-| |_____2_deploy_contracts.js
-
-|___test
-
-|___truffle.js
-
-|___.env
-
-|___.gitignore**(newfile)
+|___migrations  
+| |_____1_initial_migrations.js  
+| |_____2_deploy_contracts.js  
+|___test  
+|___truffle.js  
+|___.env  
+|___.gitignore**(newfile)  
 
 Inside your .gitignore file:
 
@@ -102,6 +94,8 @@ module.exports = {
     },
   }
 };
+
+
 The first line indicates we want to use the .env variables in this repo. Generally in most apps, you only need to require this once in the starting config file.
 
 Most of this is boilerplate. Main section we want to focus on is the ropsten network.
