@@ -48,15 +48,25 @@ Create a .gitignore file in the same directory as your .env. Now it should look 
 
 etherem_token_tutorial
 |___contracts
+
 | |_____Migrations.sol
+
 | |_____TestToken.sol
+
 |___migrations
+
 | |_____1_initial_migrations.js
+
 | |_____2_deploy_contracts.js
+
 |___test
+
 |___truffle.js
+
 |___.env
+
 |___.gitignore**(newfile)
+
 Inside your .gitignore file:
 
 // .gitignore
