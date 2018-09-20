@@ -11,14 +11,23 @@ Almost there! Now let’s start working on our deployment. Let’s head back in 
 First things first, let’s talk about security. Create a new file in your root directory called .env. Your file structure should now look like this:
 
 etherem_token_tutorial
+
 |___contracts
+
 | |_____Migrations.sol
+
 | |_____TestToken.sol
+
 |___migrations
+
 | |_____1_initial_migrations.js
+
 | |_____2_deploy_contracts.js
+
 |___test
+
 |___truffle.js
+
 |___.env**(new file)
 
 
@@ -114,26 +123,47 @@ This should create a new folder in your directory:
 
 etherem_token_tutorial
 |___build
+
 | |_____contracts
+
 |    |_____BasicToken.json
+
 |    |_____ERC20.json
+
 |    |_____ERC20Basic.json
+
 |    |_____Migrations.json
+
 |    |_____MintableToken.json
+
 |    |_____Ownable.json
+
 |    |_____SafeMath.json
+
 |    |_____StandardToken.json
+
 |    |_____TestToken.json
+
 |___contracts
+
 | |_____Migrations.sol
+
 | |_____TestToken.sol
+
 |___migrations
+
 | |_____1_initial_migrations.js
+
 | |_____2_deploy_contracts.js
+
 |___test
+
 |___truffle.js
+
 |___.env
+
 |___.gitignore**(newfile)
+
 In our build folder, we have a bunch of contracts we inherited from the Open-Zeppelin library. If you’d like to know more about ERC-20 standards I’d check out the wiki. If there’s enough people asking for it I can make another blog post on it. For now here’s the link to the wiki.
 
 Here comes the moment of truth. Now we need to deploy the contracts into the Ropsten network. Enter the following line in your terminal:
